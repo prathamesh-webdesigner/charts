@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- header  -->
+    <section class="my-4 shadow">
+        <header class="bg-white py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="header_content d-flex justify-content-between align-items-center">
+                        <img src="image/JadaPaisaa_logo.png" alt="" role="button">
+                        <h4 class="m-0">Hi, User</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- graphs Hero -->
+    <section class="graphs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Users Project-->
+                    <div class="row">
+                        <div class="col-md-6 ps-0">
+                            <div class="user_chart bg-white rounded">
+                                <div class="ps-4 pt-4">
+                                    <h4>Users</h4>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <h3>33,956</h3> <span class="text-danger">+2.12%</span>
+                                    </div>
+                                    <p class="text-muted">Tolat users world wide</p>
+                                </div>
+                                <div id="chart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pe-0">
+                            <div class="bg-white rounded">
+                                <div class="ps-4 pt-4">
+                                    <h4>Projects</h4>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <h3>50.48%</h3> <span class="text-success">+8.12%</span>
+                                    </div>
+                                    <p class="text-muted">Tolat Projects </p>
+                                </div>
+                                <div id="chart2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Users Project //-->
+                    <!-- Downloads-->
+                    <div class="row">
+                        <div class="downloads bg-white rounded">
+                            <div class="ps-4 pt-4">
+                                <h4>Downloads</h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Deleniti,
+                                    pariatur?</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="circle-data-left">
+                                        <div id="chart_circle_left"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="circle-data-left">
+                                        <div id="chart_circle_right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Downloads //-->
+                </div>
+                <div class="col-md-6">
+                    <div class="total_sales bg-white rounded">
+                        <div class="ps-4 pt-4">
+                            <h4>Total Sales</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum laborum voluptates
+                                necessitatibus, quas suscipit, ipsam pariatur porro fugiat possimus ad explicabo placeat
+                                voluptate dicta. Adipisci dolorum provident ducimus assumenda.</p>
+                            <div class="total_sales_values d-lg-flex gap-5">
+                                <div class="text-center">
+                                    <h6 class="fw-bold">Revenue</h6>
+                                    <h4>13,850</h4>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="fw-bold">Returns</h6>
+                                    <h4>1,850</h4>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="fw-bold">Queries</h6>
+                                    <h4>40,650</h4>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="fw-bold">Invoices</h6>
+                                    <h4>8,550</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chart8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cards  -->
+    <section class="value_cards py-5">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-3">
+                    <div class="value_cards1 bg-success text-white d-flex align-items-center gap-4 p-4">
+                        <!-- <div class="value_cards_icon"> -->
+                        <img src="image/total_purchase.svg" alt="">
+                        <!-- </div> -->
+                        <div class="value_cards_content">
+                            <h5>Total Sales</h5>
+                            <div class="d-flex align-items-center">
+                                <h4>$508 </h4><small> &nbsp; This month</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="value_cards1 bg-primary text-white d-flex align-items-center gap-4 p-4">
+                        <!-- <div class="value_cards_icon"> -->
+                        <img src="image/total_purchase.svg" alt="">
+                        <!-- </div> -->
+                        <div class="value_cards_content">
+                            <h5>Total Purchase</h5>
+                            <div class="d-flex align-items-center">
+                                <h4>$282 </h4><small> &nbsp; This month</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="value_cards1 bg-danger text-white d-flex align-items-center gap-4 p-4">
+                        <!-- <div class="value_cards_icon"> -->
+                        <img src="image/total_purchase.svg" alt="">
+                        <!-- </div> -->
+                        <div class="value_cards_content">
+                            <h5>Total Orders</h5>
+                            <div class="d-flex align-items-center">
+                                <h4>$165 </h4><small> &nbsp; This month</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="value_cards1 bg-warning text-white d-flex align-items-center gap-4 p-4">
+                        <!-- <div class="value_cards_icon"> -->
+                        <img src="image/total_purchase.svg" alt="">
+                        <!-- </div> -->
+                        <div class="value_cards_content">
+                            <h5>Total Purchase</h5>
+                            <div class="d-flex align-items-center">
+                                <h4>$282 </h4><small> &nbsp; This month</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cards // -->
+
+    <!-- ticket table  -->
+    <section class="ticket_table">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-8">
+                    <div class="card shadow dispatched-orders">
+                        <h4 class="stat-title font-weight-bold">Dispatched Orders</h4>
+                        <hr class="m-0">
+                        <div class="table-responsive">
+                            <table class="table orders-table">
+                                <thead>
+                                    <tr class="text-uppercase">
+                                        <th>No.</th>
+                                        <th>Status</th>
+                                        <th>Operators</th>
+                                        <th>Location</th>
+                                        <th>percentage</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align: middle">#1</td>
+                                        <td>
+                                            <span class="status-label status-green">Painting</span>
+                                        </td>
+                                        <td class="operators">
+                                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                        </td>
+                                        <td>Silicon Oasis, Dubai</td>
+                                        <td>
+                                            <span>73%</span>
+                                            <div class="progress progress-thin">
+                                                <div class="progress-bar progress-bar-green" style="width:73%"></div>
+                                            </div>
+                                        </td>
+                                        <td>27/06/2020</td>
+                                        <td>30/06/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle">#2</td>
+                                        <td>
+                                            <span class="status-label status-orange">Pending</span>
+                                        </td>
+                                        <td class="operators">
+                                            <img src="https://randomuser.me/api/portraits/men/43.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                            <img src="https://randomuser.me/api/portraits/women/39.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                        </td>
+                                        <td>Diera, Dubai</td>
+                                        <td>
+                                            <span>61%</span>
+                                            <div class="progress progress-thin">
+                                                <div class="progress-bar progress-bar-orange" style="width:61%"></div>
+                                            </div>
+                                        </td>
+                                        <td>27/06/2020</td>
+                                        <td>30/06/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#3</td>
+                                        <td>
+                                            <span class="status-label status-green">Painting</span>
+                                        </td>
+                                        <td class="operators">
+                                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                            <img src="https://randomuser.me/api/portraits/women/71.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                        </td>
+                                        <td>Burjman, Dubai</td>
+                                        <td>
+                                            <span>61%</span>
+                                            <div class="progress progress-thin">
+                                                <div class="progress-bar progress-bar-green" style="width:61%"></div>
+                                            </div>
+                                        </td>
+                                        <td>27/07/2020</td>
+                                        <td>30/07/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle">#4</td>
+                                        <td>
+                                            <span class="status-label status-red">Rejected</span>
+                                        </td>
+                                        <td class="operators">
+                                            <img src="https://randomuser.me/api/portraits/women/48.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                        </td>
+                                        <td>Al Barsha, Dubai</td>
+                                        <td>
+                                            <span>97%</span>
+                                            <div class="progress progress-thin">
+                                                <div class="progress-bar progress-bar-red" style="width:97%"></div>
+                                            </div>
+                                        </td>
+                                        <td>13/07/2020</td>
+                                        <td>15/07/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle">#4</td>
+                                        <td>
+                                            <span class="status-label status-red">Rejected</span>
+                                        </td>
+                                        <td class="operators">
+                                            <img src="https://randomuser.me/api/portraits/women/48.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                        </td>
+                                        <td>Al Barsha, Dubai</td>
+                                        <td>
+                                            <span>97%</span>
+                                            <div class="progress progress-thin">
+                                                <div class="progress-bar progress-bar-red" style="width:97%"></div>
+                                            </div>
+                                        </td>
+                                        <td>13/07/2020</td>
+                                        <td>15/07/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle">#4</td>
+                                        <td>
+                                            <span class="status-label status-red">Rejected</span>
+                                        </td>
+                                        <td class="operators">
+                                            <img src="https://randomuser.me/api/portraits/women/48.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt=""
+                                                class="rounded-circle operator-avatar">
+                                        </td>
+                                        <td>Al Barsha, Dubai</td>
+                                        <td>
+                                            <span>97%</span>
+                                            <div class="progress progress-thin">
+                                                <div class="progress-bar progress-bar-red" style="width:97%"></div>
+                                            </div>
+                                        </td>
+                                        <td>13/07/2020</td>
+                                        <td>15/07/2020</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 bg-white rounded">
+                    <!-- <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2"> -->
+                    <h4 class="stat-title font-weight-bold">Updates</h4>
+                    <hr class="m-0">
+                    <ul class="timeline px-4 pt-4">
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5 class="timeline-title">Event Title</h5>
+                                <small>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
+                                    posuere ut, mauris. Donec orci lectus, aliquam ut</small>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5 class="timeline-title">Event Title</h5>
+                                <small>Nullam vel sem. Nullam vel sem. Integer ante</small>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5 class="timeline-title">Event Title</h5>
+                                <small>Nullam vel sem. Nullam vel sem.</small>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ticket table // -->
+
+    <footer class="bg-dark text-white py-3 my-3 d-flex justify-content-center">
+        <p class="m-0">© 2022. All rights reserved Diquery.| Design by Diquery</p>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/chart.js"></script>
+</body>
+
+</html>
